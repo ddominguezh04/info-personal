@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David | Desarrollador de Software</title>
+    <meta name="description" content="Portfolio personal de David, desarrollador de software profesional especializado en crear experiencias web excepcionales.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">David<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">EN</button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content hidden">
+                <p class="greeting" data-i18n="hero_greeting">Hola, mi nombre es</p>
+                <h1 class="main-title">David.</h1>
+                <h2 class="subtitle"><span data-i18n="hero_subtitle">Construyo cosas para la web</span><span class="accent">_</span></h2>
+                <p class="hero-desc" data-i18n="hero_desc">
+                    Soy <span class="highlight">estudiante de 2º de DAW</span> (Desarrollo de Aplicaciones Web). Busco una oportunidad para <span class="highlight">teletrabajar en remoto por las mañanas</span>. Aunque no tengo experiencia profesional previa, estoy enormemente motivado y dispuesto a <span class="highlight">aprender todo lo que haga falta</span> para aportar valor a tu equipo.
+                </p>
+            </div>
+            <div class="hero-visual hidden">
+                <div class="image-wrapper">
+                    <img src="assets/profile.png" alt="David - Desarrollador" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-heading hidden">
+                <h2 class="numbered-heading" data-i18n="about_heading">Sobre Mí</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text hidden">
+                    <p data-i18n="about_p1">¡Hola! Soy David. Mi pasión por la programación me llevó a estudiar Desarrollo de Aplicaciones Web (DAW), donde estoy construyendo una base sólida como desarrollador.</p>
+                    <p data-i18n="about_p2">Me considero una persona proactiva, resolutiva y con muchas ganas de entrar al mundo laboral. Mi principal objetivo ahora mismo es encontrar una empresa que me permita crecer profesionalmente mientras demuestro mi compromiso y capacidad de aprendizaje rápido.</p>
+                    <p data-i18n="about_p_cyber">Además, mi siguiente gran objetivo es cursar el <strong>Máster de Especialización en Ciberseguridad</strong>, ya que me apasiona la protección de datos y la creación de sistemas robustos y seguros.</p>
+                    <p data-i18n="about_p3">Durante mis dos años en DAW, he adquirido conocimientos en todo el stack de desarrollo:</p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_1">Java (POO & Backend)</span></li>
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_2">PHP & Laravel</span></li>
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_3">JavaScript & TypeScript</span></li>
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_4">React & Angular</span></li>
+                        <li><i class="fas fa-caret-right"></i> Python</li>
+                        <li><i class="fas fa-caret-right"></i> HTML5, CSS3 & SASS</li>
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_7">Bases de Datos (SQL / MySQL)</span></li>
+                        <li><i class="fas fa-caret-right"></i> <span data-i18n="skill_8">Git & Despliegue Web</span></li>
+                    </ul>
+                </div>
+                <div class="about-stats hidden">
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-num">DAW</h3>
+                        <p class="stat-label" data-i18n="stat_1">Formación Actual</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-num"><i class="fas fa-laptop-house"></i></h3>
+                        <p class="stat-label" data-i18n="stat_2">Busco Remoto</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-num">100%</h3>
+                        <p class="stat-label" data-i18n="stat_3">Ganas de aprender</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-heading hidden">
+                <h2 class="numbered-heading" data-i18n="projects_heading">Cosas que he construido</h2>
+            </div>
+            <div class="projects-grid" id="github-projects">
+                <!-- Los proyectos se cargarán dinámicamente desde GitHub -->
+                <p style="text-align: center; width: 100%; grid-column: 1 / -1; color: var(--primary);">
+                    <i class="fas fa-spinner fa-spin" style="margin-right: 10px;"></i> <span data-i18n="projects_loading">Cargando repositorios desde GitHub...</span>
+                </p>
+            </div>
+            <div class="projects-more hidden">
+                <a href="https://github.com/ddominguezh04" target="_blank" class="btn btn-secondary">
+                    <span data-i18n="projects_view_all">Ver todos mis repositorios</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact hidden">
+            <h2 class="numbered-heading contact-heading" data-i18n="contact_heading">¿Qué sigue?</h2>
+            <h3 class="contact-title" data-i18n="contact_title">Ponte en contacto</h3>
+            <p class="contact-desc" data-i18n="contact_desc">
+                Actualmente estoy buscando nuevas oportunidades. Si tienes una pregunta o simplemente quieres saludar, ¡haré todo lo posible por responderte!
+            </p>
+            
+            <div class="contact-cta">
+                <a href="https://wa.me/34625325746" target="_blank" class="btn btn-secondary whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="contact_whatsapp">WhatsApp</span>
+                </a>
+            </div>
+            
+            <form class="contact-form glass-panel" id="contact-form" action="https://formsubmit.co/ddominguezh04@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Tu Nombre">
+                    <label for="name" data-i18n="form_name">Nombre</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Tu Correo">
+                    <label for="email" data-i18n="form_email">Correo</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Tu Mensaje" rows="5"></textarea>
+                    <label for="message" data-i18n="form_message">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">
+                    <span data-i18n="form_submit">Enviar Mensaje</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ddominguezh04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Diseñado y construido por David</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
