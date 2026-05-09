@@ -1,2 +1,2 @@
 # Portfolio-Personal
-Este es mi portfolio personal
+Este va a ser mi portfolio personal para encontrar trabajo
